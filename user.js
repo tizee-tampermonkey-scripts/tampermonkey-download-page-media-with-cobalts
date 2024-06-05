@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         download page media with cobalt.tools
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Download media with cobalt.tools
 // @author       tizee
 // @match        *://*.bilibili.com/video/*
@@ -32,7 +32,12 @@
 // @grant        GM_openInTab
 // @run-at       context-menu
 // ==/UserScript==
-(function() {
-    'use strict';
-    GM_openInTab(`https://cobalt.tools?u=${window.location.href}`)
+(function () {
+  'use strict';
+  GM_openInTab(`https://cobalt.tools?u=${window.location.href}`, {
+    // whether the new tab should be active (selected) or not.
+    active: true,
+    //  the position at which the new tab should be inserted in the tab strip.
+    insert: true,
+  })
 })();
