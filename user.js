@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         download page media with cobalt.tools
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/tizee-tampermonkey-scripts/tampermonkey-download-page-media-with-cobalts
 // @version      1.1
 // @description  Download media with cobalt.tools
 // @author       tizee
